@@ -5,7 +5,7 @@
 }
 
 a{
-    color: white;
+    color: #F8F8FF;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -19,16 +19,16 @@ a:hover{
 .logo img{
     max-width: 120px;
     margin-top: 1vh;
+    
 }
 
-.central{
-    font-size: 12px;
-}
 
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 8vh;
+    background-color: #0096C7;
 }
 
 .nav-list{
@@ -57,10 +57,84 @@ nav{
     transition: 0.3s;
 }
 
+/*Barra de pesquisa de passagens*/
+
+.container-fly{
+    background-color: #134783;
+    height: 25vh;
+    
+}
+
+.conteudo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo{
+    color: #F8F8FF;
+    width: 50vw;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.fly-card{
+    background-color: #0096C7;
+    width: 50vw;
+    height: 18vh;
+    border-radius: 15px;
+    box-shadow: 4px 1px 10px 0px rgba(0,0,0,0.7);
+}
+
+.fly-btn{
+    min-width: 80px;
+    height: 30px;
+    padding: 3px;
+    margin: 3px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #FFC300;
+    color: #333333;
+    font-weight: bold;
+    transition: transform 0.3s ease-in;
+    margin: 15px 0 10px 10px;
+}
+
+.fly-btn:hover{
+    background-color: #f0ce5e;
+    cursor: pointer;
+}
+
+.local1{
+    width: 25%;
+    border-radius: 10px;
+    border-style: none;
+    height: 35px;
+    padding-left: 10px;
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+.local2{
+    width: 25%;
+    border-radius: 10px;
+    border-style: none;
+    height: 35px;
+    padding-left: 10px;
+    margin-left: 0;
+}
+
+.data{
+    width: 20%;
+    border-radius: 10px;
+    border-style: none;
+    height: 35px;
+    padding-left: 10px;
+}
 
 /*Responsividade*/
 
-@media (max-width: 999px) {
+@media (max-width: 850px) {
 
     body{
         overflow-x: hidden;
@@ -72,7 +146,7 @@ nav{
         right: 0;
         width: 50vw;
         height: 92vh;
-        background-color: rgb(179, 179, 179);
+        background-color:  #0096C7;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
