@@ -45,3 +45,5 @@ const MobileNavbarInstance = new MobileNavbar(
 );
 
 MobileNavbarInstance.init();
+
+//Something Else
