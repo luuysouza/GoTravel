@@ -13,3 +13,7 @@ Contruí a área de pesquisa de viagens, por enquanto não está responsiva, mas
 <h3>Atualização 14/10/25</h3>
 
 Consegui finalizar os cards, parcialmente responsivos, pois quero pesquisar melhor como funciona a resposividade de cards desse tipo em sites existentes, para adaptar neste projeto. Amanhã será o dia do formuçário, e onde usarei JavaScript para validar se algum campo está vazio, a princípio, este é o planejamento de amanhã.
+
+<h3>Atualização 16/10/25</h3>
+
+Adicionado a área do Newsletter, que posteriormente adicionarei validação de dados com JavaScript para exibir um Alert caso algum campo esteja vazio, a princípio.
