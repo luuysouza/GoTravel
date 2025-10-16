@@ -1,3 +1,13 @@
+:root{
+    --azul-escuro: #134783;
+    --azul-claro: #0096C7;
+    --azul-hover: #5fcbf0;
+    --texto-branco: #F8F8FF;
+    --amarelo-main: #FFC300;
+    --amarelo-hover: #f0ce5e;
+    --texto-preto: #333333;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +15,7 @@
 }
 
 a{
-    color: #F8F8FF;
+    color: var(--texto-branco);
     text-decoration: none;
     transition: 0.3s;
 }
@@ -28,7 +38,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     height: 8vh;
-    background-color: #0096C7;
+    background-color: var(--azul-claro);
 }
 
 .nav-list{
@@ -60,7 +70,7 @@ nav{
 /*Barra de pesquisa de passagens*/
 
 .container-fly{
-    background-color: #134783;
+    background-color: var(--azul-escuro);
     height: 25vh;
     
 }
@@ -72,18 +82,18 @@ nav{
 }
 
 .titulo{
-    color: #F8F8FF;
+    color: var(--texto-branco);
     width: 60vw;
     text-align: left;
     margin-top: 5px;
 }
 
 .fly-card{
-    background-color: #0096C7;
+    background-color: var(--azul-claro);
     width: 60vw;
     height: 18vh;
     border-radius: 15px;
-    box-shadow: 4px 1px 10px 0px rgba(0,0,0,0.7);
+    box-shadow: 4px 1px 10px 0px rgba(0,0,0,0.3);
 }
 
 .fly-btn{
@@ -93,15 +103,15 @@ nav{
     margin: 3px;
     border-radius: 10px;
     border-style: none;
-    background-color: #FFC300;
-    color: #333333;
+    background-color: var(--amarelo-main);
+    color: var(--texto-preto);
     font-weight: bold;
     transition: transform 0.3s ease-in;
     margin: 15px 0 10px 10px;
 }
 
 .fly-btn:hover{
-    background-color: #f0ce5e;
+    background-color: var(--amarelo-hover);
     cursor: pointer;
 }
 
@@ -141,10 +151,11 @@ nav{
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    margin-bottom: 20px;
 }
 
 .container-card a{
-    color: #333333;
+    color: var(--texto-preto);
 }
 
 .card-oferta{
@@ -163,7 +174,7 @@ nav{
 .populares{
     text-align: center;
     margin: 10px 0 10px 0;
-    color: #333333;
+    color: var(--texto-preto);
 }
 
 .destino{
@@ -193,6 +204,72 @@ nav{
     font-size: 20px;
 }
 
+/*Formulário de contato*/
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center;
+    background-color: var(--amarelo-main);
+    border-radius: 8px;
+    box-shadow: 4px 1px 10px 0px rgba(0,0,0,0.3);
+}
+
+.form-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.text-form{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+}
+
+.formulario label, 
+.formulario input {
+    width: 100%;
+}
+
+.text-news{
+    margin-bottom: 10px;
+}
+
+.dados-form{
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border-style: none;
+    height: 35px;
+    max-width: 60%;
+
+}
+
+.btn-submit{
+    max-width: 7vw;
+    height: 30px;
+    padding: 3px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: var(--azul-claro);
+    color: var(--texto-branco);
+    font-weight: bold;
+    transition: transform 0.9s ease-in;
+    margin: 15px 0 10px 10px;
+}
+
+.btn-submit:hover{
+    background-color: var(--azul-hover);
+    cursor: pointer;
+}
+
 
 
 /*Responsividade*/
@@ -209,7 +286,7 @@ nav{
         right: 0;
         width: 50vw;
         height: 92vh;
-        background-color:  #0096C7;
+        background-color:  var(--azul-claro);
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
