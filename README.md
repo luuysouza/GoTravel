@@ -17,3 +17,7 @@ Consegui finalizar os cards, parcialmente responsivos, pois quero pesquisar melh
 <h3>Atualização 16/10/25</h3>
 
 Adicionado a área do Newsletter, que posteriormente adicionarei validação de dados com JavaScript para exibir um Alert caso algum campo esteja vazio, a princípio.
+
+<h3>Atualização 20/10/25</h3>
+
+Adicionado a área de FAQ do site, com o recurso de "acordeão", utilizando JavaScript para dar a interatividade ao clicar nas perguntas.

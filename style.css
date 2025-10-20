@@ -6,6 +6,7 @@
     --amarelo-main: #FFC300;
     --amarelo-hover: #f0ce5e;
     --texto-preto: #333333;
+    --texto-titulo: #272727;
 }
 
 *{
@@ -215,6 +216,7 @@ nav{
     padding: 20px;
     align-items: center;
     background-color: var(--amarelo-main);
+    color: var(--texto-preto);
     border-radius: 8px;
     box-shadow: 4px 1px 10px 0px rgba(0,0,0,0.3);
 }
@@ -224,6 +226,7 @@ nav{
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
+    color: var(--texto-preto);
 }
 
 .text-form{
@@ -270,6 +273,73 @@ nav{
     cursor: pointer;
 }
 
+/*Seção FAQ acordeão*/
+
+.faq{
+    margin-top: 20px;
+    text-align: center;
+    color: var(--texto-preto);
+}
+
+#container-accordion{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.accordion{
+    background-color: var(--azul-claro);
+    color: var(--texto-preto);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 4px 1px 10px 0px rgba(0,0,0,0.3);
+}
+
+.accordion-header{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    font-size: 22px;
+    color: var(--texto-titulo);
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.accordion-header span{
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.accordion-body{
+    color: var(--texto-preto);
+    font-size: 20px;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s;
+}
+
+.accordion-body.active{
+    height: 100%;
+    padding: 5px 0px;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.arrow{
+    transition: 0.2s linear;
+}
+
+.accordion:has(.active) .arrow{
+    transform: rotate(180deg);
+}
 
 
 /*Responsividade*/
