@@ -15,7 +15,7 @@
     font-family: "Roboto", sans-serif;
 }
 
-a{
+nav a{
     color: var(--texto-branco);
     text-decoration: none;
     transition: 0.3s;
@@ -141,11 +141,10 @@ nav{
     border-style: none;
     height: 35px;
     padding-left: 10px;
+    color: var(--texto-preto);
 }
 
 /*Cards de Ofertas*/
-
-
 
 .container-card{
     display: flex;
@@ -157,6 +156,7 @@ nav{
 
 .container-card a{
     color: var(--texto-preto);
+    text-decoration: none;
 }
 
 .card-oferta{
@@ -303,11 +303,12 @@ nav{
     border: none;
     background-color: transparent;
     display: flex;
-    font-size: 22px;
-    color: var(--texto-titulo);
+    font-size: 16px;
+    color: var(--texto-branco);
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
+    height: 30px;
 }
 
 .accordion-header span{
@@ -318,12 +319,13 @@ nav{
 }
 
 .accordion-body{
-    color: var(--texto-preto);
-    font-size: 20px;
+    color: var(--texto-branco);
+    font-size: 14px;
     opacity: 0;
     height: 0;
     overflow: hidden;
     transition: opacity 0.3s;
+
 }
 
 .accordion-body.active{
@@ -341,6 +343,59 @@ nav{
     transform: rotate(180deg);
 }
 
+/*Rodapé do Site*/
+
+footer{
+    background-color: var(--amarelo-main);
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.footer-list{
+    list-style: none;
+}
+
+.footer-list li{
+    color: var(--texto-preto);
+}
+
+.footer-list a{
+    color: var(--texto-preto);
+    text-decoration: none;
+}
+
+.list-title{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.list-item{
+    font-size: 12px;
+}
+
+.copyright{
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+    color: var(--texto-preto);
+}
+
+.copyright a{
+    color: var(--texto-preto);
+    text-decoration: none;
+}
+
+.copyright img{
+    width:12px;
+}
 
 /*Responsividade*/
 

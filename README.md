@@ -21,3 +21,7 @@ Adicionado a área do Newsletter, que posteriormente adicionarei validação de 
 <h3>Atualização 20/10/25</h3>
 
 Adicionado a área de FAQ do site, com o recurso de "acordeão", utilizando JavaScript para dar a interatividade ao clicar nas perguntas.
+
+<h3>Atualização 21/10/25</h3>
+
+Criei o rodapé do site me utilizando do flexbox, e se tudo der certo, amanhã finalizarei a responsividade do site.
