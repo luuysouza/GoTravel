@@ -46,7 +46,15 @@ const MobileNavbarInstance = new MobileNavbar(
 
 MobileNavbarInstance.init();
 
-//Something Else
+//Dark Mode
+
+const trail = document.getElementById('trail')
+const body = document.querySelector('body')
+
+trail.addEventListener('click', () => {
+    trail.classList.toggle('dark')
+    body.classList.toggle('dark')
+})
 
 //FAQ Section
 
