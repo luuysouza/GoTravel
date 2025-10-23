@@ -640,7 +640,7 @@ footer{
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 720px) {
 
     body{
         overflow-x: hidden;
@@ -731,4 +731,61 @@ botoes{
 
     .div-buscar{
         text-align: center;
+    }
+
+     @media (min-width: 340px) {
+
+        .container-fly{
+            height: 280px;
+        }
+
+        .fly-card{
+            height: 200px;
+        }
+
+    }
+
+    @media (min-width: 520px) {
+
+        .container-fly{
+            height: 270px;
+        }
+
+        .fly-card{
+            height: 200px;
+        }
+
+    }
+
+
+
+    @media (min-width: 920px) {
+
+        .container-fly{
+            height: 260px;
+        }
+
+        .fly-card{
+            height: 210px;
+        }
+
+        .div-buscar{
+            margin-top: 10px;
+        }
+    }
+
+
+     @media (min-width: 1024px) {
+
+        .container-fly{
+            height: 260px;
+        }
+
+        .fly-card{
+            height: 210px;
+        }
+
+        .div-buscar{
+            margin-top: 10px;
+        }
     }
